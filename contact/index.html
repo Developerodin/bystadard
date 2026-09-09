@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact — Taylor</title>
+    <title>Contact — BYSTANDER PR</title>
     <meta
       name="description"
-      content="Get in touch with Taylor for brand, web, and art direction projects."
+      content="Build your BYSTANDER PR consultation brief. Tell us where you are, where you want to go and what you need your story to do."
     />
     <link rel="preconnect" href="https://rsms.me/" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
-  <body id="top" class="page--dark">
-    <header class="nav" data-theme="light-on-dark">
-      <a class="nav__logo" href="../">Taylor ®</a>
+  <body id="top">
+    <header class="nav is-dark">
+      <a class="nav__logo" href="../">BYSTANDER PR<sup>®</sup></a>
       <div class="nav__clock" aria-live="polite">
         NY : <span id="ny-time">--:--</span>
       </div>
@@ -22,6 +22,8 @@
         <a href="../work/">Works</a>
         <a href="../about/">About</a>
         <a href="../blog/">Blog</a>
+        <a href="../services/">Services</a>
+        <a href="../publications/">Publications</a>
       </nav>
       <a class="nav__contact" href="./">Contact</a>
       <button class="nav__menu" type="button" aria-label="Open menu">Menu</button>
@@ -33,92 +35,212 @@
         <a href="../work/">Works</a>
         <a href="../about/">About</a>
         <a href="../blog/">Blog</a>
+        <a href="../services/">Services</a>
+        <a href="../publications/">Publications</a>
         <a href="./">Contact</a>
       </nav>
     </div>
 
-    <main class="contact-page">
-      <header class="page-hero page-hero--dark">
-        <h1 class="page-hero__title">Get in touch</h1>
-      </header>
-
-      <form class="contact-form" data-contact-form novalidate>
-        <div class="contact-form__row">
-          <div class="contact-form__field">
-            <label for="firstName">First name</label>
-            <input
-              id="firstName"
-              name="firstName"
-              type="text"
-              placeholder="taylor"
-              autocomplete="given-name"
-              required
-            />
-          </div>
-          <div class="contact-form__field">
-            <label for="lastName">Last name</label>
-            <input
-              id="lastName"
-              name="lastName"
-              type="text"
-              placeholder="barbara"
-              autocomplete="family-name"
-            />
-          </div>
-        </div>
-
-        <div class="contact-form__field">
-          <label for="email">Email</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="taylor@gmail.com"
-            autocomplete="email"
-            required
-          />
-        </div>
-
-        <div class="contact-form__field">
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            placeholder="Enter your message..."
-            required
-          ></textarea>
-        </div>
-
-        <button class="contact-form__submit" type="submit">Submit</button>
-        <p class="contact-form__status" data-contact-status aria-live="polite"></p>
-      </form>
+    <main id="main" class="page-main offer-page contact-brief">
+      <div class="wrap">
+        <!-- <h1 class="page-title">Let’s talk<br />Guaranteed PR.</h1> -->
+        <h2 class="offer-deck">
+          Tell us where you are, where you want
+          to go and what you need your story to do.
+        </h2>
+        <form id="consultation-form" class="consultation-form" novalidate>
+          <fieldset id="brief-step">
+            <legend>01 / Your story</legend>
+            <div class="brief-grid">
+              <label
+                >Your name<input
+                  id="field-name"
+                  name="name"
+                  autocomplete="name"
+                  maxlength="100"
+                  required
+                  aria-describedby="error-name"
+              /><span class="field-error" id="error-name" hidden></span
+              ></label>
+              <label
+                >Work email<input
+                  id="field-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  maxlength="254"
+                  required
+                  aria-describedby="error-email"
+              /><span class="field-error" id="error-email" hidden></span
+              ></label>
+              <label
+                >Brand / company<input
+                  id="field-company"
+                  name="company"
+                  maxlength="150"
+                  required
+                  aria-describedby="error-company"
+              /><span class="field-error" id="error-company" hidden></span
+              ></label>
+              <label
+                >Website<input
+                  id="field-website"
+                  name="website"
+                  type="url"
+                  placeholder="https://"
+                  maxlength="300"
+                  aria-describedby="error-website"
+              /><span class="field-error" id="error-website" hidden></span
+              ></label>
+              <label
+                >Your focus
+                <select
+                  id="field-service"
+                  name="service"
+                  aria-describedby="error-service"
+                >
+                  <option>Guaranteed PR placements</option>
+                  <option>Traditional PR</option>
+                  <option>AI visibility</option>
+                  <option>TV &amp; interviews</option>
+                  <option>Reputation &amp; authority</option>
+                  <option>Social &amp; executive voice</option>
+                </select>
+                <span class="field-error" id="error-service" hidden></span>
+              </label>
+              <label
+                >Membership
+                <select
+                  id="field-plan"
+                  name="plan"
+                  aria-describedby="error-plan"
+                >
+                  <option value="undecided">Help me decide</option>
+                  <option value="1">Flexible — $2,500/month</option>
+                  <option value="3">3 months — $1,950/month</option>
+                  <option value="12">12 months — $990/month</option>
+                </select>
+                <span class="field-error" id="error-plan" hidden></span>
+              </label>
+              <label class="full"
+                >Publication wishlist<input
+                  id="field-publications"
+                  name="publications"
+                  maxlength="1500"
+                  placeholder="Titles you would like to explore"
+                  aria-describedby="error-publications"
+              /><span class="field-error" id="error-publications" hidden></span
+              ></label>
+              <label class="full"
+                >Optional services<input
+                  id="field-addons"
+                  name="addons"
+                  maxlength="1000"
+                  placeholder="TV, AI audit, LinkedIn writing…"
+                  aria-describedby="error-addons"
+              /><span class="field-error" id="error-addons" hidden></span
+              ></label>
+              <label class="full"
+                >Your brief<textarea
+                  id="field-message"
+                  name="message"
+                  minlength="10"
+                  maxlength="5000"
+                  required
+                  placeholder="Tell us about your goals, story and timing."
+                  aria-describedby="error-message"
+                ></textarea>
+                <span class="field-error" id="error-message" hidden></span>
+              </label>
+            </div>
+            <button type="button" class="solid-button" id="brief-next">
+              Continue ↗
+            </button>
+          </fieldset>
+          <fieldset id="time-step" hidden>
+            <legend>02 / Your preferred conversation</legend>
+            <p>
+              A 30-minute consultation preference. Availability must be
+              confirmed separately.
+            </p>
+            <div class="brief-grid">
+              <label
+                >Preferred date<input
+                  id="field-date"
+                  name="date"
+                  type="date"
+                  aria-describedby="error-date"
+              /><span class="field-error" id="error-date" hidden></span
+              ></label>
+              <label
+                >Preferred time<input
+                  id="field-time"
+                  name="time"
+                  type="time"
+                  aria-describedby="error-time"
+              /><span class="field-error" id="error-time" hidden></span
+              ></label>
+              <label
+                >Timezone<input
+                  id="field-timezone"
+                  name="timezone"
+                  maxlength="100"
+                  aria-describedby="error-timezone"
+              /><span class="field-error" id="error-timezone" hidden></span
+              ></label>
+              <label
+                >Phone (optional)<input
+                  id="field-phone"
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                  maxlength="50"
+                  aria-describedby="error-phone"
+              /><span class="field-error" id="error-phone" hidden></span
+              ></label>
+            </div>
+            <p class="offer-note">
+              Download your brief to keep or share. Agency email and calendar
+              connections have not been configured, so this form does not send
+              an enquiry or reserve a meeting.
+            </p>
+            <div class="brief-actions">
+              <button type="button" id="brief-back">← Back</button>
+              <button class="solid-button" type="submit">
+                Download consultation brief ↗
+              </button>
+            </div>
+          </fieldset>
+          <p id="brief-status" role="status"></p>
+        </form>
+      </div>
     </main>
 
     <footer class="footer">
       <div class="footer__brand">
-        <a class="footer__logo" href="../">Taylor ®</a>
-        <p class="footer__credit">Akin X Ed © 2026</p>
+        <a class="footer__logo" href="../">BYSTANDER PR<sup>®</sup></a>
+        <p class="footer__credit">Guaranteed PR. Stories that stay.</p>
+        <p class="footer__credit">BYSTANDER PR © 2026</p>
       </div>
       <nav class="footer__nav" aria-label="Footer">
-        <a href="../">Home</a>
+        <a href="../services/">Services</a>
+        <a href="../pricing/">Pricing</a>
+        <a href="../publications/">Publications</a>
         <a href="../work/">Work</a>
         <a href="../about/">About</a>
         <a href="../blog/">Blog</a>
+        <a href="../faq/">FAQs</a>
         <a href="./">Contact</a>
       </nav>
-      <nav class="footer__nav" aria-label="Social">
-        <a href="https://www.behance.net/" target="_blank" rel="noopener"
-          >Behance</a
+      <div class="footer__right">
+        <nav class="footer__secondary" aria-label="Explore BYSTANDER PR">
+          <a href="../about/#approach">Our approach</a>
+          <a class="footer__cta" href="./">Start a conversation</a>
+        </nav>
+        <a class="footer__back" href="#top" data-back-to-top
+          >Back to top <span aria-hidden="true">↑</span></a
         >
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener"
-          >Linkedin</a
-        >
-        <a href="https://www.x.com/" target="_blank" rel="noopener"
-          >X(Twitter)</a
-        >
-      </nav>
-      <a class="footer__back" href="#top" data-back-to-top>Back to top</a>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>

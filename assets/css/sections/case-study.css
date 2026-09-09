@@ -7,7 +7,7 @@
 
 .case-study__title {
   margin: 0 0 40px;
-  padding-top: calc(var(--nav-h) + 120px);
+  padding-top: calc(var(--nav-h) + 45px);
   font-size: clamp(48px, 8vw, 72px);
   font-weight: 600;
   letter-spacing: -0.04em;
@@ -175,7 +175,6 @@
 
 @media (max-width: 809px) {
   .case-study__title {
-    padding-top: calc(var(--nav-h) + 80px);
     margin-bottom: 28px;
   }
 

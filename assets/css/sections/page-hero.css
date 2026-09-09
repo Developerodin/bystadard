@@ -2,7 +2,7 @@
   position: relative;
   z-index: var(--z-content);
   background: var(--bg);
-  padding: calc(var(--nav-h) + 120px) var(--pad-x) 64px;
+  padding: calc(var(--nav-h) + 45px) var(--pad-x) 64px;
 }
 
 .page-hero__title {

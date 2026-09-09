@@ -8,7 +8,10 @@
   height: var(--nav-h);
   padding: 18px var(--pad-x);
   color: #fff;
-  transition: color var(--transition-fast);
+  background: transparent;
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast);
   pointer-events: none;
 }
 
@@ -17,6 +20,11 @@
 }
 
 .nav.is-dark {
+  color: #000;
+}
+
+.nav.is-solid {
+  background: #fff;
   color: #000;
 }
 
@@ -30,6 +38,17 @@
 
 .nav__logo:hover {
   opacity: 0.6;
+}
+
+.nav__logo sup,
+.footer__logo sup {
+  font-size: 11px;
+  line-height: 0;
+  vertical-align: top;
+  position: relative;
+  top: 4px;
+  letter-spacing: 0;
+  margin-left: 3px;
 }
 
 .nav__clock {

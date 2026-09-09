@@ -8,8 +8,12 @@ export function initNav(lenis) {
   const closeBtn = document.querySelector(".nav__drawer-close");
   const drawerLinks = drawer?.querySelectorAll("a") ?? [];
   const darkSections = document.querySelectorAll(
-    ".services, .cta, .footer, .about-hero"
+    ".services, .cta, .about-hero"
   );
+  const SOLID_AFTER = 16;
+
+  const getScrollY = () =>
+    lenis ? lenis.scroll : window.scrollY || window.pageYOffset || 0;
 
   const isOverDarkSurface = () => {
     const navMid = nav.offsetHeight / 2;
@@ -42,7 +46,6 @@ export function initNav(lenis) {
       if (
         node.classList?.contains("services") ||
         node.classList?.contains("cta") ||
-        node.classList?.contains("footer") ||
         node.classList?.contains("hero") ||
         node.classList?.contains("about-hero")
       ) {
@@ -54,6 +57,14 @@ export function initNav(lenis) {
   };
 
   const updateTheme = () => {
+    const isSolid = getScrollY() > SOLID_AFTER;
+    nav.classList.toggle("is-solid", isSolid);
+
+    if (isSolid) {
+      nav.classList.remove("is-dark");
+      return;
+    }
+
     const onDark = isOverDarkSurface();
     nav.classList.toggle("is-dark", !onDark);
   };

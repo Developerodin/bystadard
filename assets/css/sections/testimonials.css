@@ -64,18 +64,37 @@
 
 .testimonials__nav {
   display: flex;
-  gap: 24px;
+  gap: 12px;
 }
 
 .testimonials__nav button {
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: var(--ls);
-  transition: opacity var(--transition-fast);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: #fff;
+  transition:
+    opacity var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.testimonials__nav button svg {
+  width: 18px;
+  height: 15px;
+}
+
+.testimonials__nav button[data-testimonial-nav="prev"] {
+  background: #cfcfcf;
+}
+
+.testimonials__nav button[data-testimonial-nav="next"] {
+  background: #111;
 }
 
 .testimonials__nav button:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 
 @media (max-width: 809px) {
