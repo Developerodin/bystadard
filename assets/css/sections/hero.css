@@ -76,10 +76,17 @@
   margin-top: 2px;
 }
 
+.hero__cta-wrap {
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  text-align: right;
+}
+
 .hero__blurb {
   max-width: 28ch;
-  justify-self: end;
-  text-align: right;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.25;
@@ -126,11 +133,16 @@
     order: 1;
   }
 
+  .hero__cta-wrap {
+    justify-self: start;
+    align-items: flex-start;
+    text-align: left;
+    order: 2;
+  }
+
   .hero__blurb {
     text-align: left;
-    justify-self: start;
     max-width: 34ch;
-    order: 2;
   }
 
   .hero__title-line {

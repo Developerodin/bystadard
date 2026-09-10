@@ -97,6 +97,44 @@
   opacity: 0.75;
 }
 
+.perspective {
+  position: relative;
+  z-index: var(--z-content);
+  background: var(--bg);
+  padding: 0 var(--pad-x) var(--pad-section-y-bottom);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.perspective blockquote p {
+  font-size: clamp(28px, 3vw, 48px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  max-width: 22ch;
+}
+
+.perspective footer {
+  margin-top: 24px;
+}
+
+.perspective cite {
+  font-style: normal;
+  font-weight: 600;
+  display: block;
+  font-size: 16px;
+  letter-spacing: var(--ls);
+}
+
+.perspective__role {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+
 @media (max-width: 809px) {
   .testimonials__slide {
     grid-template-columns: 1fr;
