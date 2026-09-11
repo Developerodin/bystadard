@@ -5,16 +5,6 @@ export function initContactForm() {
   const $ = (s) => document.querySelector(s);
   const params = new URLSearchParams(window.location.search);
 
-  for (const name of ["plan", "publications", "addons"]) {
-    const value = params.get(name);
-    if (
-      value &&
-      (!(name === "plan") || ["1", "3", "12"].includes(value))
-    ) {
-      form.elements[name].value = value.slice(0, 1500);
-    }
-  }
-
   const service = Number(params.get("service"));
   if (
     params.has("service") &&
@@ -147,20 +137,7 @@ export function initContactForm() {
         return null;
 
       case "service":
-      case "plan":
         if (!value) return "Choose an option from the list.";
-        return null;
-
-      case "publications":
-        if (value.length > 1500) {
-          return "Keep the publication wishlist to 1,500 characters or fewer.";
-        }
-        return null;
-
-      case "addons":
-        if (value.length > 1000) {
-          return "Keep optional services to 1,000 characters or fewer.";
-        }
         return null;
 
       case "message":
