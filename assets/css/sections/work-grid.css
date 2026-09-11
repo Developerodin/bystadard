@@ -2,7 +2,7 @@
   position: relative;
   z-index: var(--z-content);
   background: var(--bg);
-  padding: 0 var(--pad-x) var(--pad-section-y-bottom);
+  padding: 20px var(--pad-x) 50px;
 }
 
 .work-grid {

@@ -2,7 +2,7 @@
   position: relative;
   z-index: var(--z-content);
   background: var(--bg);
-  padding: calc(var(--nav-h) + 45px) var(--pad-x) 64px;
+  padding: calc(var(--nav-h) + 30px) var(--pad-x) 64px;
 }
 
 .page-hero__title {
@@ -32,6 +32,6 @@
 
 @media (max-width: 809px) {
   .page-hero {
-    padding: calc(var(--nav-h) + 80px) var(--pad-x) 48px;
+    padding: calc(var(--nav-h) + 30px) var(--pad-x) 48px;
   }
 }

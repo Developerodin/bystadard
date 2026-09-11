@@ -514,16 +514,19 @@ dialog p {
   }
 
   .page-main.contact-brief {
-    padding: calc(var(--nav-h) + 80px) var(--pad-x) var(--pad-section-y-bottom);
+    padding: calc(var(--nav-h) + 30px) var(--pad-x) 40px;
   }
 
   .page-title {
     font-size: 52px;
   }
 
-  .plan-grid,
-  .publication-grid {
+  .plan-grid {
     grid-template-columns: 1fr;
+  }
+
+  .publication-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .estimate-grid {
@@ -565,11 +568,16 @@ dialog p {
   }
 
   .offer-page {
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
 
   .publication-card {
     min-height: 200px;
+    padding: 16px;
+  }
+
+  .publication-card span {
+    font-size: 22px;
   }
 
   .brief-actions {
