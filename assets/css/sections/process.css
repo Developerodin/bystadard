@@ -3,6 +3,7 @@
   z-index: var(--z-content);
   background: var(--bg);
   padding: var(--pad-section-y-top) var(--pad-x) var(--pad-section-y-bottom);
+  overflow-x: clip;
 }
 
 .process__list {
@@ -21,7 +22,7 @@
   margin-bottom: 40px;
   border-bottom: 1px solid var(--fg);
   opacity: 0;
-  transform: translateX(48px);
+  transform: translateY(28px);
   transition:
     opacity 0.75s var(--ease-out),
     transform 0.75s var(--ease-out);

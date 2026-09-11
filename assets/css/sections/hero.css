@@ -95,16 +95,19 @@
 
 .hero__title {
   mix-blend-mode: difference;
+  max-width: 100%;
 }
 
 .hero__title-line {
   margin: 0;
   text-transform: uppercase;
-  font-size: clamp(52px, 11vw, 160px);
+  font-size: clamp(40px, 11vw, 160px);
   font-weight: 700;
   line-height: 0.9;
   letter-spacing: -0.03em;
   color: #fff;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .hero__title-line--right {
@@ -117,7 +120,7 @@
   }
 
   .hero__content {
-    padding: 0 16px 24px;
+    padding: 0 var(--pad-x) 24px;
     padding-top: var(--nav-h);
   }
 
@@ -146,6 +149,6 @@
   }
 
   .hero__title-line {
-    font-size: 52px;
+    font-size: clamp(36px, 10.5vw, 52px);
   }
 }

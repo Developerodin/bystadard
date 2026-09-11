@@ -6,6 +6,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
 }
 
 html.lenis,
@@ -28,6 +29,7 @@ html.lenis body {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: clip;
   background: var(--bg);
   color: var(--fg);
   font-family: var(--font);
