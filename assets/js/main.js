@@ -7,7 +7,6 @@ import { initStatsCountUp } from "./components/stats.js";
 import { initTestimonials } from "./components/carousel.js";
 import { initProcessReveal } from "./components/process-reveal.js";
 import { initContactForm } from "./components/contact-form.js";
-import { initIndiaMarquee } from "./components/india-marquee.js";
 import { initPublications } from "./components/publications.js";
 import { initFaqFilter } from "./components/faq-filter.js";
 import { initPricingEstimate } from "./components/pricing-estimate.js";
@@ -77,7 +76,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initTestimonials();
   initProcessReveal();
   initContactForm();
-  initIndiaMarquee();
   initPublications();
   initFaqFilter();
   initPricingEstimate();

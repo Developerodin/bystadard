@@ -176,6 +176,10 @@
   line-height: 1.1;
 }
 
+.nav__drawer-links a:last-child {
+  color: var(--brand);
+}
+
 @media (max-width: 1199px) {
   .nav__links,
   .nav__contact,

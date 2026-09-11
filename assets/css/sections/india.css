@@ -60,21 +60,8 @@
 }
 
 .india-marquee-top {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  align-items: center;
   font-size: 14px;
   margin-bottom: 12px;
-}
-
-.marquee-toggle {
-  background: none;
-  border: 0;
-  text-decoration: underline;
-  font-size: 14px;
-  padding: 8px;
-  white-space: nowrap;
 }
 
 .india-window {
@@ -105,7 +92,7 @@
 }
 
 .india-group .india-logo {
-  width: 260px;
+  max-width: 230px;
   flex-shrink: 0;
 }
 
@@ -139,12 +126,6 @@
   background: #f5f5f5;
 }
 
-.india-marquee:hover .india-track,
-.india-marquee:focus-within .india-track,
-.india-marquee.is-paused .india-track {
-  animation-play-state: paused;
-}
-
 .india-section .offer-note {
   font-size: 14px;
   line-height: 1.6;
@@ -163,10 +144,6 @@
 
 .offer-page .india-heading > div {
   max-width: 700px;
-}
-
-.india-logo img[src$="ndtv.svg"] {
-  filter: invert(1);
 }
 
 @keyframes publication-scroll {
@@ -242,10 +219,6 @@
   }
 
   .india-group[aria-hidden="true"] {
-    display: none;
-  }
-
-  .marquee-toggle {
     display: none;
   }
 }
