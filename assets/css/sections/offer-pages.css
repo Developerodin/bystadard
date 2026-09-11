@@ -41,6 +41,40 @@
   color: var(--brand);
 }
 
+.contact-direct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: -30px auto 60px;
+  text-align: center;
+}
+
+.contact-direct__label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.contact-direct__number {
+  font-size: clamp(22px, 2.6vw, 32px);
+  font-weight: 500;
+  letter-spacing: var(--ls);
+  line-height: 1.2;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.contact-direct__number:hover {
+  color: var(--brand);
+  border-bottom-color: var(--brand);
+}
+
 .contact-brief .consultation-form {
   margin-inline: auto;
 }
@@ -561,6 +595,10 @@ dialog p {
 
   .offer-deck {
     margin-bottom: 40px;
+  }
+
+  .contact-direct {
+    margin: -16px auto 40px;
   }
 
   .offer-band {
