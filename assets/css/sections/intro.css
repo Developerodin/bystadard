@@ -32,7 +32,7 @@
 
 .intro__portrait {
   width: 210px;
-  height: 210px;
+  height: 250px;
   object-fit: cover;
   border-radius: var(--radius-btn);
 }
@@ -81,6 +81,5 @@
     width: 100%;
     max-width: 280px;
     height: auto;
-    aspect-ratio: 1;
   }
 }
